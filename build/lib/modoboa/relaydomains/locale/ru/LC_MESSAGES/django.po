@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Modoboa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-16 17:24+0100\n"
+"PO-Revision-Date: 2013-12-03 09:35+0000\n"
+"Last-Translator: Antoine Nguyen <tonio@ngyn.org>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/modoboa/language/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: app_settings.py:18
+msgid "General"
+msgstr "Основные"
+
+#: app_settings.py:21
+msgid "Postfix's master.cf path"
+msgstr ""
+
+#: app_settings.py:23
+msgid "Path to the master.cf configuration file"
+msgstr ""
+
+#: apps.py:23
+msgid "Relay domains"
+msgstr ""
+
+#: forms.py:52
+#, fuzzy
+#| msgid "Invalid line"
+msgid "Invalid value"
+msgstr "Ошибочная строка"
+
+#: general_callbacks.py:53 general_callbacks.py:60
+msgid "Relay domain"
+msgstr ""
+
+#: general_callbacks.py:73
+msgid "Relay settings"
+msgstr ""
+
+#: general_callbacks.py:109
+msgid ""
+"\n"
+"<li><em>relaydomain; name; target host; target port; service; enabled; "
+"verify recipients</em></li>\n"
+msgstr ""
+
+#: models.py:48
+msgid "name"
+msgstr "имя"
+
+#: models.py:49
+msgid "The service name"
+msgstr ""
+
+#: models.py:71
+msgid "target host address"
+msgstr ""
+
+#: models.py:73
+msgid "Remote address (hostname or IP) of this domain"
+msgstr ""
+
+#: models.py:76
+msgid "target host port"
+msgstr ""
+
+#: models.py:78
+msgid "Remote port of this domain"
+msgstr ""
+
+#: models.py:83
+msgid "verify recipients"
+msgstr ""
+
+#: models.py:84
+msgid "Check for valid recipients"
+msgstr ""
+
+#: models.py:95
+msgid "Relay Domain"
+msgstr ""
+
+#: models.py:123
+msgid "Invalid line"
+msgstr "Ошибочная строка"
+
+#: templates/relaydomains/service_field.html:3
+msgid "Scan"
+msgstr ""
+
+#, fuzzy
+#~| msgid "The domain name"
+#~ msgid "The relay domain name"
+#~ msgstr "Имя домена"
