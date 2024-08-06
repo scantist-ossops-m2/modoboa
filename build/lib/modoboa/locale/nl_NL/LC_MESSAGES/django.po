@@ -1,0 +1,972 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Andrew <buddha@cryptolab.net>, 2014
+# TuxBrother <vrijwilligerswerk@wij.rs>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Modoboa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-27 16:42+0200\n"
+"PO-Revision-Date: 2014-12-31 11:37+0000\n"
+"Last-Translator: TuxBrother <vrijwilligerswerk@wij.rs>\n"
+"Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/"
+"modoboa/language/nl_NL/)\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/app_settings.py:26
+#, fuzzy
+#| msgid "Profile"
+msgid "User profile"
+msgstr "Profiel"
+
+#: core/app_settings.py:39
+msgid "Authentication"
+msgstr "Authenticatie"
+
+#: core/app_settings.py:42
+msgid "Authentication type"
+msgstr "Authenticatie type"
+
+#: core/app_settings.py:43
+msgid "Local"
+msgstr "Lokaal"
+
+#: core/app_settings.py:46
+msgid "The backend used for authentication"
+msgstr "De backend gebruikt voor authenticatie"
+
+#: core/app_settings.py:51
+msgid "Default password scheme"
+msgstr "Standaard wachtwoord encryptiemethode"
+
+#: core/app_settings.py:55
+msgid "md5crypt (weak)"
+msgstr "md5crypt (zwak)"
+
+#: core/app_settings.py:56
+msgid "sha256 (weak)"
+msgstr "sha256 (zwak)"
+
+#: core/app_settings.py:57
+msgid "md5 (weak)"
+msgstr "md5 (zwak)"
+
+#: core/app_settings.py:58
+msgid "crypt (weak)"
+msgstr "crypt (zwak)"
+
+#: core/app_settings.py:59
+msgid "plain (weak)"
+msgstr "plain (onversleuteld!)"
+
+#: core/app_settings.py:61
+msgid "Scheme used to crypt mailbox passwords"
+msgstr "Schema dat gebruikt word om mailbox wachtwoorden te versleutelen"
+
+#: core/app_settings.py:66
+msgid "Rounds"
+msgstr "Rondes"
+
+#: core/app_settings.py:69
+msgid ""
+"Number of rounds to use (only used by sha256crypt and sha512crypt). Must be "
+"between 1000 and 999999999, inclusive."
+msgstr ""
+"Nummer van te gebruiken randomizeringsrondes (alleen bij sha256crypt en "
+"sha512crypt). Moet tussen de 1000 en 999999999 liggen."
+
+#: core/app_settings.py:76
+msgid "Secret key"
+msgstr "Geheime sleutel"
+
+#: core/app_settings.py:78
+msgid "Key used to encrypt/decrypt passwords"
+msgstr "Code die gebruikt word om wachtwoorden te versleutelen/ontsleutelen"
+
+#: core/app_settings.py:83
+#, fuzzy
+#| msgid "Default password scheme"
+msgid "Default password"
+msgstr "Standaard wachtwoord encryptiemethode"
+
+#: core/app_settings.py:86
+msgid "Default password for automatically created accounts."
+msgstr ""
+
+#: core/app_settings.py:90
+msgid "LDAP settings"
+msgstr "LDAP instellingen"
+
+#: core/app_settings.py:93
+msgid "Server address"
+msgstr "Server adres"
+
+#: core/app_settings.py:96
+msgid "The IP address or the DNS name of the LDAP server"
+msgstr "Het IP adres of de DNS naam van LDAP server"
+
+#: core/app_settings.py:101
+msgid "Server port"
+msgstr "Server poort"
+
+#: core/app_settings.py:103
+msgid "The TCP port number used by the LDAP server"
+msgstr "Het TCP poortnummer gebruikt door de LDAP server"
+
+#: core/app_settings.py:108
+msgid "Use a secured connection"
+msgstr "Gebruik een beveiligde verbinding"
+
+#: core/app_settings.py:111
+msgid "Use an SSL/TLS connection to access the LDAP server"
+msgstr "Gebruik een SSL/TLS verbinding met de LDAP server"
+
+#: core/app_settings.py:115
+msgid "Authentication method"
+msgstr "Authenticatie methode"
+
+#: core/app_settings.py:116
+msgid "Search and bind"
+msgstr "Zoeken en koppelen"
+
+#: core/app_settings.py:117
+msgid "Direct bind"
+msgstr "Directe koppeling"
+
+#: core/app_settings.py:119
+msgid "Choose the authentication method to use"
+msgstr "Kies een authenticatie methode om te gebruiken"
+
+#: core/app_settings.py:124
+msgid "Bind DN"
+msgstr "Koppeling DN"
+
+#: core/app_settings.py:127
+msgid ""
+"The distinguished name to use when binding to the LDAP server. Leave empty "
+"for an anonymous bind"
+msgstr ""
+"De gedistingeerde naam om te gebruiken bij het koppeling met de LDAP server. "
+"Laat leeg voor een anonieme koppeling."
+
+#: core/app_settings.py:135
+msgid "Bind password"
+msgstr "Koppel wachtwoord"
+
+#: core/app_settings.py:138
+msgid "The password to use when binding to the LDAP server (with 'Bind DN')"
+msgstr ""
+"Het wachtwoord om te gebruiken tijdens het koppelen met de LDAP server (met "
+"'koppel DN')"
+
+#: core/app_settings.py:147
+msgid "Users search base"
+msgstr "Gebruikers zoekbasis"
+
+#: core/app_settings.py:150
+msgid "The distinguished name of the search base used to find users"
+msgstr "De gedistingeerde naam van de zoekbasis om gebruikers te vinden"
+
+#: core/app_settings.py:157
+msgid "Search filter"
+msgstr "Zoek filter"
+
+#: core/app_settings.py:160
+msgid ""
+"An optional filter string (e.g. '(objectClass=person)'). In order to be "
+"valid, it must be enclosed in parentheses."
+msgstr ""
+"Een optionele filter string (zoals '(objectClass=person)'). Om geldig te "
+"kunnen zijn, moet het ingesloten zijn tussen haakjes."
+
+#: core/app_settings.py:168
+msgid "User DN template"
+msgstr "Gebruiker DN template"
+
+#: core/app_settings.py:171
+#, python-format
+msgid ""
+"The template used to construct a user's DN. It should contain one "
+"placeholder (ie. %(user)s)"
+msgstr ""
+"Het template dat gebruikt word om een gebruiker zijn/haar DN op te bouwen. "
+"Het moet een placeholder bevatten (bijvoorbeeld. %(user)s)"
+
+#: core/app_settings.py:179
+msgid "Password attribute"
+msgstr "Wachtwoord attribuut"
+
+#: core/app_settings.py:181
+msgid "The attribute used to store user passwords"
+msgstr "Dit attribuut word gebruikt om wachtwoorden op te slaan"
+
+#: core/app_settings.py:186
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#: core/app_settings.py:189
+msgid "Tell if the LDAP server is an Active Directory one"
+msgstr "De LDAP server is een Active Directory"
+
+#: core/app_settings.py:193
+msgid "Administrator groups"
+msgstr "Administrator groepen"
+
+#: core/app_settings.py:196
+msgid ""
+"Members of those LDAP Posix groups will be created as domain administrators. "
+"Use ';' characters to separate groups."
+msgstr ""
+"Leden van deze LDAP POSIX groepen zullen aangemaakt worden als domein "
+"administrators. Gebruik ';' karakters om groepen te scheiden."
+
+#: core/app_settings.py:203
+#, fuzzy
+#| msgid "Group name"
+msgid "Group type"
+msgstr "Groep naam"
+
+#: core/app_settings.py:207
+msgid "The LDAP group type to use with your directory."
+msgstr ""
+
+#: core/app_settings.py:212
+msgid "Groups search base"
+msgstr "Groepen zoek basis"
+
+#: core/app_settings.py:215
+msgid "The distinguished name of the search base used to find groups"
+msgstr "De gedistingeerde naam van de zoekbasis om groepen te vinden"
+
+#: core/app_settings.py:220 core/templates/core/dashboard.html:5
+msgid "Dashboard"
+msgstr ""
+
+#: core/app_settings.py:223
+msgid "Custom RSS feed"
+msgstr ""
+
+#: core/app_settings.py:226
+msgid "Display custom RSS feed to resellers and domain administrators"
+msgstr ""
+
+#: core/app_settings.py:231
+msgid "Hide features widget"
+msgstr ""
+
+#: core/app_settings.py:234
+msgid "Hide features widget for resellers and domain administrators"
+msgstr ""
+
+#: core/app_settings.py:238
+#, fuzzy
+#| msgid "Authentication"
+msgid "Notifications"
+msgstr "Authenticatie"
+
+#: core/app_settings.py:241
+#, fuzzy
+#| msgid "Server address"
+msgid "Sender address"
+msgstr "Server adres"
+
+#: core/app_settings.py:244
+msgid "Email address used to send notifications."
+msgstr ""
+
+#: core/app_settings.py:248
+msgid "Public API"
+msgstr ""
+
+#: core/app_settings.py:251
+msgid "Enable communication"
+msgstr ""
+
+#: core/app_settings.py:254
+msgid "Enable communication with Modoboa public API"
+msgstr ""
+
+#: core/app_settings.py:258
+msgid "Check new versions"
+msgstr "Controleer of er een nieuwe versie beschikbaar is"
+
+#: core/app_settings.py:261
+msgid "Automatically checks if a newer version is available"
+msgstr "Automatische controle voor nieuwe versies"
+
+#: core/app_settings.py:265
+msgid "Send statistics"
+msgstr ""
+
+#: core/app_settings.py:268
+msgid "Send statistics to Modoboa public API (counters and used extensions)"
+msgstr ""
+
+#: core/app_settings.py:272
+msgid "Miscellaneous"
+msgstr "Diversen"
+
+#: core/app_settings.py:275
+msgid "Top notifications check interval"
+msgstr "Top notificaties controle interval"
+
+#: core/app_settings.py:278
+#, fuzzy
+#| msgid "Interval between two top notification checks"
+msgid "Interval between two top notification checks (in seconds)"
+msgstr "Interval tussen twee top notificatie checks"
+
+#: core/app_settings.py:284
+msgid "Maximum log record age"
+msgstr "Maximum bewaartijd van logs"
+
+#: core/app_settings.py:286
+msgid "The maximum age in days of a log record"
+msgstr "De maximum bewaartijd in dagen van een log record"
+
+#: core/app_settings.py:291
+msgid "Items per page"
+msgstr "Items per pagina"
+
+#: core/app_settings.py:293
+msgid "Number of displayed items per page"
+msgstr "Hoeveelheid items per pagina"
+
+#: core/app_settings.py:298
+msgid "Default top redirection"
+msgstr "Standaard top omleiding"
+
+#: core/app_settings.py:302
+msgid "The default redirection used when no application is specified"
+msgstr ""
+"De standaard omleiding die gebruikt word als er geen andere applicatie is "
+"opgegeven"
+
+#: core/app_settings.py:335
+msgid "Key must be either 16, 24, or 32 bytes long"
+msgstr "Sleutelwaarde moet 16, 24 of 32 bytes lang zijn"
+
+#: core/app_settings.py:344
+msgid "Invalid syntax"
+msgstr "Ongeldige zinsbouw"
+
+#: core/app_settings.py:350
+msgid "Invalid rounds number"
+msgstr "Ongeldig nummer van rondes"
+
+#: core/app_settings.py:377
+msgid "This field is required"
+msgstr "Dit veld is benodigd"
+
+#: core/apps.py:20
+msgid "General"
+msgstr "Algemeen"
+
+#: core/constants.py:9
+msgid "Simple user"
+msgstr "Gebruiker"
+
+#: core/constants.py:10
+#, fuzzy
+#| msgid "Super administrator"
+msgid "Domain administrator"
+msgstr "Hoofdbeheerder"
+
+#: core/constants.py:11
+msgid "Reseller"
+msgstr ""
+
+#: core/constants.py:12
+msgid "Super administrator"
+msgstr "Hoofdbeheerder"
+
+#: core/forms.py:24
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: core/forms.py:28
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: core/forms.py:41
+msgid "Old password"
+msgstr "Oud wachtwoord"
+
+#: core/forms.py:45
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+#: core/forms.py:49
+msgid "Confirmation"
+msgstr "Bevestiging"
+
+#: core/forms.py:77
+msgid "Old password mismatchs"
+msgstr "Oud wachtwoord komt niet overeen"
+
+#: core/forms.py:84
+msgid "Passwords mismatch"
+msgstr "Wachtwoorden komt niet overeen"
+
+#: core/forms.py:104
+msgid "Enable API access"
+msgstr ""
+
+#: core/handlers.py:44
+msgid "added"
+msgstr "toegevoegd"
+
+#: core/handlers.py:47
+msgid "modified"
+msgstr "veranderd"
+
+#: core/handlers.py:49 core/handlers.py:73
+#, python-format
+msgid "%(object)s '%(name)s' %(action)s by user %(user)s"
+msgstr "%(object)s '%(name)s' %(action)s door gebruiker %(user)s"
+
+#: core/handlers.py:75
+msgid "deleted"
+msgstr "verwijderd"
+
+#: core/handlers.py:98
+msgid "You can't delete your own account"
+msgstr "U kunt uw eigen account niet verwijderen"
+
+#: core/handlers.py:134
+#, fuzzy
+#| msgid "An update is available!"
+msgid "One or more updates are available"
+msgstr "Er is een update beschikbaar!"
+
+#: core/models.py:57
+#, fuzzy
+#| msgid "Group name"
+msgid "First name"
+msgstr "Groep naam"
+
+#: core/models.py:59
+#, fuzzy
+#| msgid "Last login"
+msgid "Last name"
+msgstr "Laatste login"
+
+#: core/models.py:66
+msgid "Allow mailboxes access"
+msgstr ""
+
+#: core/models.py:68
+msgid "Allow this administrator to access user mailboxes"
+msgstr ""
+
+#: core/models.py:71
+msgid "password"
+msgstr "wachtwoord"
+
+#: core/models.py:73
+msgid "last login"
+msgstr "laatste login"
+
+#: core/models.py:77
+#, fuzzy
+#| msgid "Prefered language"
+msgid "language"
+msgstr "Voorkeurs taal"
+
+#: core/models.py:80
+#, fuzzy
+#| msgid "Prefered language to display pages"
+msgid "Prefered language to display pages."
+msgstr "Voorkeurstaal om pagina's weer te geven"
+
+#: core/models.py:84
+msgid "Phone number"
+msgstr ""
+
+#: core/models.py:86
+msgid "Secondary email"
+msgstr ""
+
+#: core/models.py:89
+msgid "An alternative e-mail address, can be used for recovery needs."
+msgstr ""
+
+#: core/models.py:144
+msgid "Failed to update password: LDAP module not installed"
+msgstr "Mislukt om wachtwoord aan te passen: LDAP module niet geinstalleerd"
+
+#: core/models.py:203
+msgid "account"
+msgstr "account"
+
+#: core/models.py:325
+msgid "Unknown"
+msgstr ""
+
+#: core/models.py:359
+msgid "Invalid line"
+msgstr "Verkeerde regel"
+
+#: core/models.py:367
+msgid "You can't import an account with a role greater than yours"
+msgstr "U kunt geen accounts importeren met hogere rechten dan die van uzelf."
+
+#: core/models.py:382
+#, python-format
+msgid "The simple user '%s' must have a valid email address"
+msgstr "De gebruiker '%s' moet een geldig email adres hebben"
+
+#: core/models.py:387
+#, python-format
+msgid "username and email fields must not differ for '%s'"
+msgstr "gebruikersnaam en email velden moeten niet verschillen van '%s'"
+
+#: core/password_validation.py:26
+msgid "Password must contain at least {} digit."
+msgid_plural "Password must contain at least {} digits."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/password_validation.py:36
+msgid "Password must contain at least {} lowercase letter."
+msgid_plural "Password must contain at least {} lowercase letters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/password_validation.py:47
+msgid "Password must contain at least {} uppercase letter."
+msgid_plural "Password must contain at least {} uppercase letters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/password_validation.py:59
+msgid "Password must contain at least {} special character."
+msgid_plural "Password must contain at least {} special characters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/password_validation.py:67
+msgid "Your password must contain a combination of different character types."
+msgstr ""
+
+#: core/templates/core/_current_features.html:6
+msgid "Features looking for sponsoring"
+msgstr ""
+
+#: core/templates/core/_current_features.html:12
+msgid "Goal:"
+msgstr ""
+
+#: core/templates/core/_current_features.html:18
+msgid "More"
+msgstr ""
+
+#: core/templates/core/_current_features.html:22
+msgid "Nothing to sponsor yet."
+msgstr ""
+
+#: core/templates/core/_latest_news_widget.html:5
+msgid "Latest news"
+msgstr ""
+
+#: core/templates/core/_latest_news_widget.html:19
+msgid ""
+"Visit the <a href=\"https://modoboa.org/blog/\" target=\"_blank\">official "
+"weblog</a> for more information."
+msgstr ""
+
+#: core/templates/core/api_access.html:3
+msgid "API access"
+msgstr ""
+
+#: core/templates/core/api_access.html:3
+msgid "Control your access to Modoboa API"
+msgstr ""
+
+#: core/templates/core/api_access.html:7
+#, python-format
+msgid ""
+"A documentation of the API is available <strong><a href=\"%(url)s\" target="
+"\"_blank\">here</a></strong>."
+msgstr ""
+
+#: core/templates/core/api_access.html:14
+msgid "API access token"
+msgstr ""
+
+#: core/templates/core/api_access.html:35
+#: core/templates/core/user_profile.html:10 lib/form_utils.py:359
+msgid "Update"
+msgstr "Toepassen"
+
+#: core/templates/core/dashboard.html:11
+#, python-format
+msgid "Hello %(user)s."
+msgstr ""
+
+#: core/templates/core/information.html:2 core/templatetags/core_tags.py:64
+msgid "Information"
+msgstr "Informatie"
+
+#: core/templates/core/information.html:2
+msgid "Various information about Modoboa"
+msgstr "Informatie over Modoboa"
+
+#: core/templates/core/information.html:5
+#, fuzzy
+#| msgid "An update is available!"
+msgid "One or more updates are available!"
+msgstr "Er is een update beschikbaar!"
+
+#: core/templates/core/information.html:6
+msgid "Check the following list to find the component(s) that can be updated."
+msgstr ""
+
+#: core/templates/core/information.html:10
+#, fuzzy
+#| msgid "Authentication"
+msgid "Applications"
+msgstr "Authenticatie"
+
+#: core/templates/core/information.html:14
+#: core/templates/core/information.html:36
+msgid "Name"
+msgstr "Naam"
+
+#: core/templates/core/information.html:15
+msgid "Installed version"
+msgstr ""
+
+#: core/templates/core/information.html:16
+#, fuzzy
+#| msgid "Last login"
+msgid "Last version"
+msgstr "Laatste login"
+
+#: core/templates/core/information.html:17
+msgid "Description"
+msgstr "Beschrijving"
+
+#: core/templates/core/information.html:32
+msgid "Active users"
+msgstr "Actieve gebruikers"
+
+#: core/templates/core/information.html:37
+msgid "Role"
+msgstr ""
+
+#: core/templates/core/information.html:38
+msgid "Last login"
+msgstr "Laatste login"
+
+#: core/templates/core/logs.html:2 core/templatetags/core_tags.py:68
+msgid "Logs"
+msgstr "Logs"
+
+#: core/templates/core/logs.html:2
+msgid "Previously on Modoboa..."
+msgstr "Vorige gebeurtenissen op Modoboa..."
+
+#: core/templates/core/logs.html:6 lib/templatetags/lib_tags.py:109
+msgid "Date"
+msgstr "Datum"
+
+#: core/templates/core/logs.html:7
+msgid "Level"
+msgstr "Niveau"
+
+#: core/templates/core/logs.html:8
+msgid "Logger"
+msgstr "Logger"
+
+#: core/templates/core/logs.html:9
+msgid "Message"
+msgstr "Bericht"
+
+#: core/templates/core/parameters.html:2 core/templatetags/core_tags.py:73
+msgid "Parameters"
+msgstr "Parameters"
+
+#: core/templates/core/parameters.html:2
+msgid "Configure Modoboa"
+msgstr "Configureer Modoboa"
+
+#: core/templates/core/parameters.html:6
+#: core/templates/core/user_preferences.html:10
+msgid "Save"
+msgstr "Opslaan"
+
+#: core/templates/core/settings_header.html:5
+msgid "Modoboa settings"
+msgstr "Instellingen van Modoboa"
+
+#: core/templates/core/user_index.html:4 core/templatetags/core_tags.py:92
+msgid "Settings"
+msgstr "Instellingen"
+
+#: core/templates/core/user_preferences.html:2
+#: core/templatetags/core_tags.py:122
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: core/templates/core/user_preferences.html:2
+msgid "Customize Modoboa"
+msgstr "Modoboa aanpassen"
+
+#: core/templates/core/user_preferences.html:14
+#, fuzzy
+#| msgid "Preferences saved"
+msgid "No preferences available."
+msgstr "Voorkeuren opgeslagen"
+
+#: core/templates/core/user_profile.html:3 core/templatetags/core_tags.py:118
+msgid "Profile"
+msgstr "Profiel"
+
+#: core/templates/core/user_profile.html:3
+msgid "Update your personal information"
+msgstr "Persoonlijke informatie aanpassen"
+
+#: core/templatetags/core_tags.py:36
+msgid "Modoboa"
+msgstr "Modoboa"
+
+#: core/templatetags/core_tags.py:104
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: core/templatetags/core_tags.py:129
+msgid "API"
+msgstr ""
+
+#: core/utils.py:36
+#, fuzzy
+#| msgid "Welcome to Modoboa"
+msgid "The core part of Modoboa"
+msgstr "Welkom bij Modoboa"
+
+#: core/views/admin.py:48
+msgid "Parameters saved"
+msgstr "Parameters opgeslagen"
+
+#: core/views/auth.py:45
+#, python-format
+msgid "User '%s' successfully logged in"
+msgstr "Gebruiker '%s' successvol aangemeld"
+
+#: core/views/auth.py:53
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+"Uw gebruikersnaam en wachtwoord komen niet overeen. Probeer het alstublief "
+"opnieuw."
+
+#: core/views/auth.py:87
+#, fuzzy
+#| msgid "User '%s' successfully logged in"
+msgid "User '{}' successfully logged out"
+msgstr "Gebruiker '%s' successvol aangemeld"
+
+#: core/views/user.py:51
+msgid "Profile updated"
+msgstr "Profiel aangepast"
+
+#: core/views/user.py:77
+msgid "Preferences saved"
+msgstr "Voorkeuren opgeslagen"
+
+#: core/views/user.py:99
+#, fuzzy
+#| msgid "Profile updated"
+msgid "Access updated"
+msgstr "Profiel aangepast"
+
+#: lib/db_utils.py:27
+#, python-format
+msgid "Connection to database %s not configured"
+msgstr "Verbinding naar database %s niet ingesteld"
+
+#: lib/exceptions.py:70
+#, python-format
+msgid "Permission denied: %s"
+msgstr "Toegang geweigerd: %s"
+
+#: lib/exceptions.py:71
+msgid "Permission denied"
+msgstr "Toegang geweigerd"
+
+#: lib/fields.py:17 lib/validators.py:16
+msgid "Enter a valid domain name"
+msgstr "Vul een geledige domeinnaam in"
+
+#: lib/fields.py:46 lib/fields.py:60
+#, fuzzy
+#| msgid "Enter a valid domain name"
+msgid "Enter a valid email address."
+msgstr "Vul een geledige domeinnaam in"
+
+#: lib/form_utils.py:85 templates/registration/password_reset_confirm.html:12
+#: templates/registration/password_reset_form.html:11
+msgid "Submit"
+msgstr "Versturen"
+
+#: lib/form_utils.py:118 lib/form_utils.py:121
+msgid "Invalid request"
+msgstr "Ongeldig verzoek"
+
+#: lib/form_utils.py:424
+msgid "Yes"
+msgstr "Ja"
+
+#: lib/form_utils.py:425
+msgid "No"
+msgstr "Nee"
+
+#: lib/ldap_utils.py:133
+#, fuzzy
+#| msgid "Failed to update password: %s"
+msgid "Failed to update password: {}"
+msgstr "Mislukt om wachtwoord aan te passen: %s"
+
+#: lib/templatetags/lib_tags.py:107
+msgid "From"
+msgstr ""
+
+#: lib/templatetags/lib_tags.py:108
+msgid "To"
+msgstr ""
+
+#: lib/templatetags/lib_tags.py:110 templates/common/email_searchbar.html:17
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: templates/404.html:4 templates/500.html:4
+msgid "Sorry"
+msgstr "Sorry"
+
+#: templates/404.html:5
+msgid "The requested page does not exist."
+msgstr "De opgegeven pagina bestaat niet."
+
+#: templates/500.html:5
+msgid "An internal error occured."
+msgstr "Er is een interne fout opgetreden."
+
+#: templates/common/email_searchbar.html:5
+msgid "Search..."
+msgstr "Zoeken..."
+
+#: templates/common/email_searchbar.html:10
+msgid "From address"
+msgstr "Van adres"
+
+#: templates/common/email_searchbar.html:33
+msgid "Both"
+msgstr "Beiden"
+
+#: templates/common/error.html:4
+msgid "Error:"
+msgstr "Foutmelding:"
+
+#: templates/common/generic_field.html:11
+#: templates/common/generic_fields_group.html:8
+msgid "Help:"
+msgstr "Help:"
+
+#: templates/common/generic_modal.html:6
+#: templates/common/generic_modal.html:13 templates/common/wizard_forms.html:6
+#: templates/common/wizard_forms.html:27
+msgid "Close"
+msgstr "Sluiten"
+
+#: templates/common/wizard_forms.html:31
+msgid "Previous"
+msgstr "Vorige"
+
+#: templates/common/wizard_forms.html:32
+msgid "Next"
+msgstr "Volgende"
+
+#: templates/registration/base.html:8
+msgid "Welcome to Modoboa"
+msgstr "Welkom bij Modoboa"
+
+#: templates/registration/login.html:21
+msgid "Remember me"
+msgstr "Onthoud mij"
+
+#: templates/registration/login.html:23
+msgid "Log in"
+msgstr "Inloggen"
+
+#: templates/registration/login.html:24
+#: templates/registration/password_reset_form.html:6
+#, fuzzy
+#| msgid "password"
+msgid "Forgot password?"
+msgstr "wachtwoord"
+
+#: templates/registration/password_reset_complete.html:8
+#, python-format
+msgid ""
+"Your password has been set. You may go ahead and <a href=\"%(url)s\">sign "
+"in</a> now."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:7
+#, fuzzy
+#| msgid "New password"
+msgid "Change password"
+msgstr "Nieuw wachtwoord"
+
+#: templates/registration/password_reset_confirm.html:17
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:7
+msgid ""
+"<p>We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly.</p> "
+"<p>If you don't receive an email, please make sure you've entered your "
+"primary address, and check your spam folder.</p>"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:4
+#, python-format
+msgid ""
+"To initiate the password reset process for your %(username)s Modoboa "
+"account, click the link below:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:10
+msgid ""
+"If clicking the link above doesn't work, please copy and paste the URL in a "
+"new browser window instead."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:14
+msgid "Sincerely, The Modoboa Team."
+msgstr ""
+
+#: templates/registration/password_reset_subject.txt:3
+msgid "Modoboa password reset"
+msgstr ""
+
+#, fuzzy
+#~| msgid "User '%s' logged out"
+#~ msgid "User {} logged out"
+#~ msgstr "Gebruiker '%s' heeft afgemeld"
+
+#~ msgid "Group name"
+#~ msgstr "Groep naam"
+
+#~ msgid "Display"
+#~ msgstr "Weergeven"
