@@ -1,0 +1,46 @@
+{% extends "registration/base.html" %}
+
+{% load i18n core_tags lib_tags form_tags static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
+{% endblock %}
+
+{% block main_content %}
+  <form method="post" action="{% url 'core:login' %}" class="login-form form-horizontal">
+    {% csrf_token %}
+    {% render_field form.username %}
+    {% render_field form.password %}
+    <input type="hidden" name="next" value="{{ next }}" />
+    <div class="form-group">
+      <div class="control-label col-lg-4 col-md-4 col-sm-4 ">
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5">
+        <div class="checkbox">
+          <label class="checkbox" for="id_rememberme">
+            <input type="checkbox" id="id_rememberme" name="rememberme" />{% trans "Remember me" %}
+          </label>
+          <button class="btn btn-primary col-lg-12" type="submit">{% trans "Log in" %}</button>
+          <a class="pull-right" href="{% url 'password_reset' %}">{% trans "Forgot password?" %}</a>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="login-error">
+    {% if error %}{% alert error "danger" %}{% endif %}
+  </div>
+{% endblock %}
+
+{% block sub_content %}
+  {% for annoucement in annoucements %}
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6">{{ annoucement|safe }}</div>
+  {% endfor %}
+{% endblock %}
+
+{% block extra_js %}
+  <script type="text/javascript">
+   $(document).ready(function() {
+       $('#id_username').focus();
+   });
+  </script>
+{% endblock %}
