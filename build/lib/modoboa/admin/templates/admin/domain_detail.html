@@ -1,0 +1,95 @@
+{% extends "admin/header.html" %}
+
+{% load i18n %}
+{% load admin_tags %}
+
+{% block leftcol %}
+<ul class="nav nav-sidebar">
+  {% domains_menu "domains" user False %}
+</ul>
+
+{% get_extra_admin_content user "leftcol" selection %}
+{% endblock %}
+
+{% block apparea %}
+  <h2>{{ object }} {% if not object.enabled %} <small>{% trans "(disabled)" %}</small>{% endif %}</h2>
+  <hr>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">{% trans "Summary" %}</h3>
+      </div>
+      <div class="panel-body">
+        {% if enable_mx_checks == "yes" or enable_dnsbl_checks == "yes" %}
+          <div class="row">
+            <span class="title">{% trans "DNS status" %}</span>
+            {% if domain.awaiting_checks %}
+              <span class="label label-mini label-info">{% trans "Awaiting checks" %}</span>
+            {% else %}
+              {% if enable_mx_checks == "yes" %}
+                <span class="label label-mini label-{% if not domain.mxrecord_set.has_valids %}danger{% else %}success{% endif %}"><a href="{% url 'admin:mx_domain_detail' domain.pk %}" data-toggle="ajaxmodal">MX</a></span>
+              {% endif %}
+              {% if enable_dnsbl_checks == "yes" %}
+                <span class="label label-mini label-{{ domain.dnsbl_status_color }}"><a href="{% url 'admin:dnsbl_domain_detail' domain.pk %}" data-toggle="ajaxmodal">DNSBL</a></span>
+              {% endif %}
+            {% endif %}
+          </div>
+        {% endif %}
+        <div class="row">
+          <span class="title">{% trans "Creation date" %}</span><span>{{ domain.creation }}</span>
+        </div>
+        <div class="row"><span class="title">{% trans "Last modification date" %}</span><span>{{ domain.last_modification }}</span></div>
+        <div class="row"><span class="title">{% trans "Domain aliases" %}</span><span>{{ domain.domainalias_count }}</span></div>
+        <div class="row"><span class="title"><a href="{% url 'admin:identity_list' %}#list/?searchquery=@{{ object.name }}">{% trans "Mailboxes" %}</a></span><span>{{ domain.mailbox_count }}</span></div>
+        <div class="row"><span class="title"><a href="{% url 'admin:identity_list' %}#list/?searchquery=@{{ object.name }}">{% trans "Mailbox aliases" %}</a></span><span>{{ domain.mbalias_count }}</span></div>
+      </div>
+    </div>
+
+    {% if object.domainalias_set.exists %}
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">{% trans "Domain aliases" %}</h3>
+      </div>
+      <table class="table">
+        {% for domainalias in object.domainalias_set.all %}
+          <tr><td>{{ domainalias }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+    {% endif %}
+
+    {% for template in templates.left %}
+      {% include template %}
+    {% endfor %}
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="panel panel-info">
+      <div class="panel-heading"><h3 class="panel-title">{% trans "Administrators" %}</h3></div>
+      <div class="panel-body">
+        <table id="domadmins" class="table table-condensed">
+          <tr><th>{% trans "Username" %}</th><th>{% trans "Name" %}</th><th></th></tr>
+          {% for da in domain.admins %}
+            <tr>
+              <td>{{ da.username }}</td>
+              <td>{{ da.fullname }}</td>
+              <td name="actions">
+                {% if perms.admin.change_domain %}
+                  <a name="removeperm" href="{% url 'admin:permission_remove' %}?domid={{ domain.id }}&daid={{ da.id }}" title="{% trans 'Remove this permission' %}"><span class="fa fa-trash"></span></a>
+                {% endif %}
+              </td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="3">{% trans "No domain administrator defined yet." %}</td></tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+    
+    {% for template in templates.right %}
+      {% include template %}
+    {% endfor %}
+  </div>
+
+{% endblock %}
