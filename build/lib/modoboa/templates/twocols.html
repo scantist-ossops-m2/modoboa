@@ -1,0 +1,13 @@
+{% extends "fluid.html" %}
+
+{% load core_tags %}
+
+{% block container_content %}
+<div id="leftcol" class="sidebar collapse navbar-collapse">
+  {% block leftcol %}{% endblock %}
+</div>
+<div class="main">
+  {% if messages %}{% display_messages messages %}{% endif %}
+  {% block apparea %}{% endblock %}
+</div>
+{% endblock %}
