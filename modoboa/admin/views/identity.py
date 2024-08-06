@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.utils.translation import ugettext as _, ungettext
 from django.views import generic
 from django.views.decorators.csrf import ensure_csrf_cookie
+from django.views.decorators.http import require_http_methods
 
 from django.contrib.auth import mixins as auth_mixins
 from django.contrib.auth.decorators import (
@@ -187,6 +188,7 @@ def editaccount(request, pk):
 
 @login_required
 @permission_required("core.delete_user")
+@require_http_methods(["POST"])
 def delaccount(request, pk):
     keepdir = True if request.POST.get("keepdir", "false") == "true" else False
     User.objects.get(pk=pk).delete(request.user, keep_mb_dir=keepdir)
